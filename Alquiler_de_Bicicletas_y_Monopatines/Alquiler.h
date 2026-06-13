@@ -12,9 +12,8 @@ private:
     int       _idVehiculo;
     FechaHora _fechaHoraInicio;
     FechaHora _fechaHoraFin;
-    bool      _estado;         // true = activo | false = finalizado
+    bool      _estado;       // true = activo | false = finalizado
     float     _montoTotal;
-    char      _tipoAlquiler;   // '1' = Inmediato | '2' = Reserva
 
 public:
     Alquiler();
@@ -28,7 +27,6 @@ public:
     void setFechaHoraFin(FechaHora fh);
     void setEstado(bool estado);
     void setMontoTotal(float montoTotal);
-    void setTipoAlquiler(char tipo);
 
     // Getters
     int       getCodAlquiler();
@@ -39,13 +37,10 @@ public:
     FechaHora getFechaHoraFin();
     bool      getEstado();
     float     getMontoTotal();
-    char      getTipoAlquiler();
 
-    // Calcula el monto en bloques de 15 minutos segun el precio del vehiculo.
-    // Minimo: 1 bloque (aplica en cancelacion tambien).
     void calcularMonto(float precioPorBloque);
 
-    void cargar();
+    void cargar(int tipo);
     void mostrar();
 };
 

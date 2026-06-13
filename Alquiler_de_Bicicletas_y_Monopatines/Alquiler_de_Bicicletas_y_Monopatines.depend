@@ -7,18 +7,19 @@
 1780353138 c:\users\ale\documents\proyectosc++\tpi\alquiler_de_bicicletas_y_monopatines\fecha.h
 	<iostream>
 
-1780957669 source:c:\users\ale\documents\proyectosc++\tpi\alquiler_de_bicicletas_y_monopatines\alquiler.cpp
+1781368980 source:c:\users\ale\documents\proyectosc++\tpi\alquiler_de_bicicletas_y_monopatines\alquiler.cpp
 	"Alquiler.h"
+	"Utils.h"
 
-1780956290 c:\users\ale\documents\proyectosc++\tpi\alquiler_de_bicicletas_y_monopatines\alquiler.h
+1781369008 c:\users\ale\documents\proyectosc++\tpi\alquiler_de_bicicletas_y_monopatines\alquiler.h
 	<iostream>
 	"FechaHora.h"
 
-1780957701 source:c:\users\ale\documents\proyectosc++\tpi\alquiler_de_bicicletas_y_monopatines\main.cpp
+1781369952 source:c:\users\ale\documents\proyectosc++\tpi\alquiler_de_bicicletas_y_monopatines\main.cpp
 	<iostream>
+	<cstdio>
 	"Alquiler.h"
 	"AlquilerArchivo.h"
-	"FechaHora.h"
 
 1780957531 c:\users\ale\documents\proyectosc++\tpi\alquiler_de_bicicletas_y_monopatines\fechahora.h
 	<iostream>
@@ -37,4 +38,11 @@
 	<iostream>
 	<cstdio>
 	"Alquiler.h"
+
+1781368536 c:\users\ale\documents\proyectosc++\tpi\alquiler_de_bicicletas_y_monopatines\utils.h
+	<iostream>
+	"FechaHora.h"
+
+1781368557 source:c:\users\ale\documents\proyectosc++\tpi\alquiler_de_bicicletas_y_monopatines\utils.cpp
+	"Utils.h"
 
