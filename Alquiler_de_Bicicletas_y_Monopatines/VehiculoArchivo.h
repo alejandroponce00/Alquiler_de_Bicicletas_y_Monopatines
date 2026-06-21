@@ -1,14 +1,24 @@
 #pragma once
-#include "Alquiler.h"
+#include "vehiculo.h"
 
-class vehiculoArchivo{
+class VehiculoArchivo{
 private:
-    char nombreArchivo[30];
+    char nombreArchivo [30];
 
-    bool abrirArchivo(fstream& archivo) const;
-    // Abre el archivo en modo lectura/escritura binario. Retorna false si falla.
 public:
-
-
+//constructor
+VehiculoArchivo(const char* _nombreArchivo ="VehiculoArchivo.dat");
+//metodos
+bool guardar (const Vehiculo &vehi);
+Vehiculo leer(const int pos);
+bool modificar(Vehiculo vehi, int pos);
+bool bajaLogica (const int id);
+void listar();
+void listarDisponibles();
+void listarAlquilados();
+void listarPortipo(const string tipo);
+int buscarPorId(int id);
+bool existeVehiculo(int id);
+int contarRegistros();
 
 };

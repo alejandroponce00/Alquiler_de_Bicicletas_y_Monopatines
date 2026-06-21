@@ -1,4 +1,5 @@
-#pragma once
+#ifndef ALQUILER_H
+#define ALQUILER_H
 
 #include <iostream>
 #include "FechaHora.h"
@@ -44,4 +45,4 @@ public:
     void mostrar();
 };
 
-
+#endif

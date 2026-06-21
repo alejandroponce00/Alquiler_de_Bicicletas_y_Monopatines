@@ -6,7 +6,7 @@ AlquilerArchivo::AlquilerArchivo() {
 }
 
 // ── GUARDAR ────────────────────────────────────────────────────────────────────
-// "ab" = apend binario:agrega al final sin borrar lo que ya esta.
+// "ab" = append binario: agrega al final sin borrar lo existente
 
 bool AlquilerArchivo::guardar(Alquiler alqui) {
     FILE *p = fopen(_nombreArchivo, "ab");
@@ -25,7 +25,7 @@ bool AlquilerArchivo::guardar(Alquiler alqui) {
 }
 
 // ── LEER ───────────────────────────────────────────────────────────────────────
-// "rb" = lectura
+// "rb" = lectura binaria
 
 Alquiler AlquilerArchivo::leer(int pos) {
     Alquiler alqui;
@@ -41,7 +41,7 @@ Alquiler AlquilerArchivo::leer(int pos) {
 }
 
 // ── MODIFICAR ──────────────────────────────────────────────────────────────────
-// "r+b" = lectura/escritura sin borrar el archivo
+// "r+b" = lectura/escritura binaria sin borrar el archivo
 
 bool AlquilerArchivo::modificar(Alquiler alqui, int pos) {
     FILE *p = fopen(_nombreArchivo, "r+b");
@@ -51,10 +51,8 @@ bool AlquilerArchivo::modificar(Alquiler alqui, int pos) {
     }
     fseek(p, pos * sizeof(Alquiler), SEEK_SET);
     bool ok = fwrite(&alqui, sizeof(Alquiler), 1, p);
-    if (ok == true) {
-        cout << "Alquiler modificado exitosamente." << endl;
-    } else {
-        cout << "Error al modificar el alquiler." << endl;
+    if (ok == false) {
+       cout << "Error al modificar el alquiler." << endl;
     }
     fclose(p);
     return ok;

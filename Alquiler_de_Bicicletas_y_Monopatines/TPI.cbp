@@ -2,12 +2,12 @@
 <CodeBlocks_project_file>
 	<FileVersion major="1" minor="6" />
 	<Project>
-		<Option title="Alquiler_de_Bicicletas_y_Monopatines" />
+		<Option title="TPI" />
 		<Option pch_mode="2" />
 		<Option compiler="gcc" />
 		<Build>
 			<Target title="Debug">
-				<Option output="bin/Debug/Alquiler_de_Bicicletas_y_Monopatines" prefix_auto="1" extension_auto="1" />
+				<Option output="bin/Debug/TPI" prefix_auto="1" extension_auto="1" />
 				<Option object_output="obj/Debug/" />
 				<Option type="1" />
 				<Option compiler="gcc" />
@@ -16,7 +16,7 @@
 				</Compiler>
 			</Target>
 			<Target title="Release">
-				<Option output="bin/Release/Alquiler_de_Bicicletas_y_Monopatines" prefix_auto="1" extension_auto="1" />
+				<Option output="bin/Release/TPI" prefix_auto="1" extension_auto="1" />
 				<Option object_output="obj/Release/" />
 				<Option type="1" />
 				<Option compiler="gcc" />
@@ -36,11 +36,31 @@
 		<Unit filename="Alquiler.h" />
 		<Unit filename="AlquilerArchivo.cpp" />
 		<Unit filename="AlquilerArchivo.h" />
-		<Unit filename="Fechahora.cpp" />
-		<Unit filename="Fechahora.h" />
+		<Unit filename="Cliente.cpp" />
+		<Unit filename="Cliente.h" />
+		<Unit filename="ClienteArchivo.cpp" />
+		<Unit filename="ClienteArchivo.h" />
+		<Unit filename="Empleado.cpp" />
+		<Unit filename="Empleado.h" />
+		<Unit filename="EmpleadoArchivo.cpp" />
+		<Unit filename="EmpleadoArchivo.h" />
+		<Unit filename="FechaHora.cpp" />
+		<Unit filename="FechaHora.h" />
+		<Unit filename="MenuEmpleados.cpp" />
+		<Unit filename="MenuEmpleados.h" />
+		<Unit filename="Persona.cpp" />
+		<Unit filename="Persona.h" />
+		<Unit filename="Utils.cpp" />
+		<Unit filename="Utils.h" />
+		<Unit filename="Vehiculo.cpp" />
+		<Unit filename="Vehiculo.h" />
 		<Unit filename="VehiculoArchivo.cpp" />
 		<Unit filename="VehiculoArchivo.h" />
 		<Unit filename="main.cpp" />
-		<Extensions />
+		<Unit filename="managerMenu.cpp" />
+		<Unit filename="managerMenu.h" />
+		<Extensions>
+			<lib_finder disable_auto="1" />
+		</Extensions>
 	</Project>
 </CodeBlocks_project_file>

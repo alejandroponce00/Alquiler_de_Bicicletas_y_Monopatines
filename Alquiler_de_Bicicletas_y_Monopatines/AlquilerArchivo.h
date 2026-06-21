@@ -1,4 +1,5 @@
-#pragma once
+#ifndef ALQUILERARCHIVO_H
+#define ALQUILERARCHIVO_H
 
 #include <iostream>
 #include <cstdio>
@@ -18,7 +19,7 @@ public:
     // Lee el alquiler en la posicion indicada (base 0)
     Alquiler leer(int pos);
 
-    // Sobreescribe el registro en pos (para devolución / cancelación)
+    // Sobreescribe el registro en pos (para devoluciÃ³n / cancelaciÃ³n)
     bool modificar(Alquiler alqui, int pos);
 
     // Listados
@@ -35,3 +36,4 @@ public:
     int contarRegistros();
 };
 
+#endif

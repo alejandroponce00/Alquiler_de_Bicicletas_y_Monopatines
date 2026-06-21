@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_layout_file>
+	<FileVersion major="1" minor="0" />
+	<ActiveTarget name="Debug" />
+	<File name="ClienteArchivo.cpp" open="0" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1721" topLine="32" />
+		</Cursor>
+	</File>
+	<File name="Cliente.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="115" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="AlquilerArchivo.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="12" />
+		</Cursor>
+	</File>
+	<File name="Alquiler.h" open="0" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="21" />
+		</Cursor>
+	</File>
+	<File name="AlquilerArchivo.cpp" open="0" top="0" tabpos="8" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="2159" topLine="35" />
+		</Cursor>
+	</File>
+	<File name="Cliente.cpp" open="0" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="498" topLine="20" />
+		</Cursor>
+	</File>
+	<File name="Utils.cpp" open="1" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="5812" topLine="7" />
+		</Cursor>
+		<Folding>
+			<Collapse line="3" />
+			<Collapse line="14" />
+			<Collapse line="46" />
+			<Collapse line="61" />
+			<Collapse line="76" />
+			<Collapse line="86" />
+			<Collapse line="114" />
+			<Collapse line="120" />
+			<Collapse line="142" />
+			<Collapse line="150" />
+			<Collapse line="159" />
+			<Collapse line="177" />
+		</Folding>
+	</File>
+	<File name="Persona.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="674" topLine="6" />
+		</Cursor>
+	</File>
+	<File name="managerMenu.h" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="553" topLine="10" />
+		</Cursor>
+	</File>
+	<File name="FechaHora.cpp" open="0" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="552" topLine="11" />
+		</Cursor>
+	</File>
+	<File name="Empleado.cpp" open="1" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="76" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="EmpleadoArchivo.cpp" open="1" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="2659" topLine="95" />
+		</Cursor>
+	</File>
+	<File name="EmpleadoArchivo.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="328" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="Alquiler.cpp" open="0" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="3432" topLine="46" />
+		</Cursor>
+	</File>
+	<File name="VehiculoArchivo.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="276" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="VehiculoArchivo.cpp" open="0" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="187" topLine="3" />
+		</Cursor>
+	</File>
+	<File name="main.cpp" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="235" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="Utils.h" open="0" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="773" topLine="2" />
+		</Cursor>
+	</File>
+	<File name="ClienteArchivo.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="279" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="managerMenu.cpp" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="-1" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="36426" topLine="170" />
+		</Cursor>
+		<Folding>
+			<Collapse line="59" />
+			<Collapse line="118" />
+			<Collapse line="249" />
+			<Collapse line="309" />
+			<Collapse line="325" />
+			<Collapse line="344" />
+			<Collapse line="575" />
+			<Collapse line="604" />
+			<Collapse line="630" />
+			<Collapse line="682" />
+			<Collapse line="755" />
+			<Collapse line="836" />
+			<Collapse line="910" />
+			<Collapse line="972" />
+			<Collapse line="1031" />
+			<Collapse line="1089" />
+			<Collapse line="1157" />
+			<Collapse line="1308" />
+			<Collapse line="1335" />
+			<Collapse line="1372" />
+			<Collapse line="1387" />
+		</Folding>
+	</File>
+	<File name="Persona.cpp" open="1" top="0" tabpos="8" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1304" topLine="17" />
+		</Cursor>
+	</File>
+	<File name="Empleado.h" open="1" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="428" topLine="0" />
+		</Cursor>
+	</File>
+</CodeBlocks_layout_file>

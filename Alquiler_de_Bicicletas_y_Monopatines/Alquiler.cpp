@@ -35,7 +35,9 @@ float     Alquiler::getMontoTotal()      { return _montoTotal; }
 // ── Logica de negocio ──────────────────────────────────────────────────────────
 
 void Alquiler::calcularMonto(float precioPorBloque) {
-    _montoTotal = Utils::calcularMonto(_fechaHoraInicio, _fechaHoraFin, precioPorBloque);
+    float total=calMonto(_fechaHoraInicio, _fechaHoraFin, precioPorBloque);
+
+    _montoTotal = total;
 }
 
 // ── E/S ────────────────────────────────────────────────────────────────────────
@@ -43,18 +45,16 @@ void Alquiler::calcularMonto(float precioPorBloque) {
 void Alquiler::cargar(int tipo) {
     cout << "\n=== CARGAR ALQUILER ===" << endl;
 
-    cout << "ID cliente  : "; cin >> _idCliente;
-    cout << "ID empleado : "; cin >> _idEmpleado;
     cout << "ID vehiculo : "; cin >> _idVehiculo;
 
-    _fechaHoraInicio = Utils::pedirFechaInicio(tipo);
+    _fechaHoraInicio = pedirFechaInicio(tipo);
 
     _estado     = true;
     _montoTotal = 0.0;
 }
 
 void Alquiler::mostrar() {
-    cout << "\n----------------------------------------" << endl;
+    cout << "\n====================================" << endl;
     cout << "Codigo Alquiler : " << _codAlquiler << endl;
     cout << "ID Cliente      : " << _idCliente   << endl;
     cout << "ID Empleado     : " << _idEmpleado  << endl;
@@ -69,5 +69,5 @@ void Alquiler::mostrar() {
     cout << endl;
     cout << "Estado          : " << (_estado ? "Activo" : "Finalizado") << endl;
     cout << "Monto Total     : $" << _montoTotal << endl;
-    cout << "----------------------------------------" << endl;
+    cout << "========================================" << endl;
 }

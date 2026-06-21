@@ -1,0 +1,654 @@
+# depslib dependency file v1.0
+1781835888 source:c:\users\ale\desktop\frankestein\tpi\alquiler.cpp
+	"Alquiler.h"
+	"Utils.h"
+
+1781835888 c:\users\ale\desktop\frankestein\tpi\alquiler.h
+	<iostream>
+	"FechaHora.h"
+
+1781835888 c:\users\ale\desktop\frankestein\tpi\fechahora.h
+	<iostream>
+	<ctime>
+
+1781835888 c:\users\ale\desktop\frankestein\tpi\utils.h
+	<iostream>
+	<regex>
+	"FechaHora.h"
+	"ClienteArchivo.h"
+	"EmpleadoArchivo.h"
+
+1781835888 c:\users\ale\desktop\frankestein\tpi\clientearchivo.h
+	<iostream>
+	<cstdio>
+	"Cliente.h"
+
+1781835888 c:\users\ale\desktop\frankestein\tpi\cliente.h
+	<string>
+	"Persona.h"
+
+1781835888 c:\users\ale\desktop\frankestein\tpi\persona.h
+	<string>
+
+1781835888 c:\users\ale\desktop\frankestein\tpi\empleadoarchivo.h
+	<iostream>
+	<cstdio>
+	"Empleado.h"
+
+1781835888 c:\users\ale\desktop\frankestein\tpi\empleado.h
+	<string>
+	"Persona.h"
+
+1781835888 source:c:\users\ale\desktop\frankestein\tpi\alquilerarchivo.cpp
+	"AlquilerArchivo.h"
+	<cstring>
+
+1781835888 c:\users\ale\desktop\frankestein\tpi\alquilerarchivo.h
+	<iostream>
+	<cstdio>
+	"Alquiler.h"
+
+1781835888 source:c:\users\ale\desktop\frankestein\tpi\cliente.cpp
+	<cstring>
+	<string>
+	<iostream>
+	"Persona.h"
+	"Cliente.h"
+
+1781835888 source:c:\users\ale\desktop\frankestein\tpi\clientearchivo.cpp
+	"ClienteArchivo.h"
+	<cstring>
+
+1781835888 source:c:\users\ale\desktop\frankestein\tpi\empleado.cpp
+	<cstring>
+	<string>
+	<iostream>
+	"Empleado.h"
+	"Persona.h"
+
+1781835888 source:c:\users\ale\desktop\frankestein\tpi\empleadoarchivo.cpp
+	"EmpleadoArchivo.h"
+	<cstring>
+
+1781835888 source:c:\users\ale\desktop\frankestein\tpi\fechahora.cpp
+	"FechaHora.h"
+
+1781835888 source:c:\users\ale\desktop\frankestein\tpi\menuempleados.cpp
+	"MenuEmpleados.h"
+	<iostream>
+
+1781835888 c:\users\ale\desktop\frankestein\tpi\menuempleados.h
+	"Empleado.h"
+	"EmpleadoArchivo.h"
+
+1781835888 source:c:\users\ale\desktop\frankestein\tpi\persona.cpp
+	<cstring>
+	<string>
+	<iostream>
+	"Persona.h"
+
+1781835888 source:c:\users\ale\desktop\frankestein\tpi\utils.cpp
+	"Utils.h"
+	<cstring>
+
+1781822777 source:c:\users\ale\desktop\frankestein\tpi\vehiculo.cpp
+	"vehiculo.h"
+	<cstring>
+	<string>
+	"Utils.h"
+
+1781040794 c:\users\ale\desktop\frankestein\tpi\vehiculo.h
+	<iostream>
+	<cstring>
+
+1781864766 source:c:\users\ale\desktop\frankestein\tpi\managermenu.cpp
+	<iostream>
+	"managerMenu.h"
+	"VehiculoArchivo.h"
+	"Vehiculo.h"
+	"Utils.h"
+	"Alquiler.h"
+	"AlquilerArchivo.h"
+	<cstring>
+
+1781864628 c:\users\ale\desktop\frankestein\tpi\managermenu.h
+
+1781752648 c:\users\ale\desktop\frankestein\tpi\vehiculoarchivo.h
+	"vehiculo.h"
+
+1781767234 source:c:\users\ale\desktop\frankestein\tpi\vehiculoarchivo.cpp
+	<iostream>
+	"vehiculo.h"
+	<cstring>
+	"VehiculoArchivo.h"
+
+1781865337 source:c:\users\ale\desktop\frankestein\tpi\main.cpp
+	<iostream>
+	"Vehiculo.h"
+	"VehiculoArchivo.h"
+	"managerMenu.h"
+
+1781922392 source:c:\users\nicol\downloads\tpi1.2\tpi\alquiler.cpp
+	"Alquiler.h"
+	"Utils.h"
+
+1781835888 c:\users\nicol\downloads\tpi1.2\tpi\alquiler.h
+	<iostream>
+	"FechaHora.h"
+
+1781835888 c:\users\nicol\downloads\tpi1.2\tpi\fechahora.h
+	<iostream>
+	<ctime>
+
+1781922392 c:\users\nicol\downloads\tpi1.2\tpi\utils.h
+	<iostream>
+	<regex>
+	"FechaHora.h"
+	"ClienteArchivo.h"
+	"EmpleadoArchivo.h"
+
+1781835888 c:\users\nicol\downloads\tpi1.2\tpi\clientearchivo.h
+	<iostream>
+	<cstdio>
+	"Cliente.h"
+
+1781835888 c:\users\nicol\downloads\tpi1.2\tpi\cliente.h
+	<string>
+	"Persona.h"
+
+1781835888 c:\users\nicol\downloads\tpi1.2\tpi\persona.h
+	<string>
+
+1781835888 c:\users\nicol\downloads\tpi1.2\tpi\empleadoarchivo.h
+	<iostream>
+	<cstdio>
+	"Empleado.h"
+
+1781835888 c:\users\nicol\downloads\tpi1.2\tpi\empleado.h
+	<string>
+	"Persona.h"
+
+1781835888 source:c:\users\nicol\downloads\tpi1.2\tpi\alquilerarchivo.cpp
+	"AlquilerArchivo.h"
+	<cstring>
+
+1781835888 c:\users\nicol\downloads\tpi1.2\tpi\alquilerarchivo.h
+	<iostream>
+	<cstdio>
+	"Alquiler.h"
+
+1781835888 source:c:\users\nicol\downloads\tpi1.2\tpi\cliente.cpp
+	<cstring>
+	<string>
+	<iostream>
+	"Persona.h"
+	"Cliente.h"
+
+1781835888 source:c:\users\nicol\downloads\tpi1.2\tpi\clientearchivo.cpp
+	"ClienteArchivo.h"
+	<cstring>
+
+1781835888 source:c:\users\nicol\downloads\tpi1.2\tpi\empleado.cpp
+	<cstring>
+	<string>
+	<iostream>
+	"Empleado.h"
+	"Persona.h"
+
+1781835888 source:c:\users\nicol\downloads\tpi1.2\tpi\empleadoarchivo.cpp
+	"EmpleadoArchivo.h"
+	<cstring>
+
+1781835888 source:c:\users\nicol\downloads\tpi1.2\tpi\fechahora.cpp
+	"FechaHora.h"
+
+1781865337 source:c:\users\nicol\downloads\tpi1.2\tpi\main.cpp
+	<iostream>
+	"Vehiculo.h"
+	"VehiculoArchivo.h"
+	"managerMenu.h"
+
+1781040794 c:\users\nicol\downloads\tpi1.2\tpi\vehiculo.h
+	<iostream>
+	<cstring>
+
+1781752648 c:\users\nicol\downloads\tpi1.2\tpi\vehiculoarchivo.h
+	"vehiculo.h"
+
+1781864628 c:\users\nicol\downloads\tpi1.2\tpi\managermenu.h
+
+1781926487 source:c:\users\nicol\downloads\tpi1.2\tpi\managermenu.cpp
+	<iostream>
+	"managerMenu.h"
+	"VehiculoArchivo.h"
+	"Vehiculo.h"
+	"Utils.h"
+	"Alquiler.h"
+	"AlquilerArchivo.h"
+	<cstring>
+
+1781835888 source:c:\users\nicol\downloads\tpi1.2\tpi\menuempleados.cpp
+	"MenuEmpleados.h"
+	<iostream>
+
+1781835888 c:\users\nicol\downloads\tpi1.2\tpi\menuempleados.h
+	"Empleado.h"
+	"EmpleadoArchivo.h"
+
+1781835888 source:c:\users\nicol\downloads\tpi1.2\tpi\persona.cpp
+	<cstring>
+	<string>
+	<iostream>
+	"Persona.h"
+
+1781922392 source:c:\users\nicol\downloads\tpi1.2\tpi\utils.cpp
+	"Utils.h"
+	<cstring>
+
+1781822777 source:c:\users\nicol\downloads\tpi1.2\tpi\vehiculo.cpp
+	"vehiculo.h"
+	<cstring>
+	<string>
+	"Utils.h"
+
+1781767234 source:c:\users\nicol\downloads\tpi1.2\tpi\vehiculoarchivo.cpp
+	<iostream>
+	"vehiculo.h"
+	<cstring>
+	"VehiculoArchivo.h"
+
+1781922392 source:c:\users\valen\downloads\tpi\tpi\alquiler.cpp
+	"Alquiler.h"
+	"Utils.h"
+
+1781835888 c:\users\valen\downloads\tpi\tpi\alquiler.h
+	<iostream>
+	"FechaHora.h"
+
+1781835888 c:\users\valen\downloads\tpi\tpi\fechahora.h
+	<iostream>
+	<ctime>
+
+1781922392 c:\users\valen\downloads\tpi\tpi\utils.h
+	<iostream>
+	<regex>
+	"FechaHora.h"
+	"ClienteArchivo.h"
+	"EmpleadoArchivo.h"
+
+1781835888 c:\users\valen\downloads\tpi\tpi\clientearchivo.h
+	<iostream>
+	<cstdio>
+	"Cliente.h"
+
+1781835888 c:\users\valen\downloads\tpi\tpi\cliente.h
+	<string>
+	"Persona.h"
+
+1781835888 c:\users\valen\downloads\tpi\tpi\persona.h
+	<string>
+
+1781835888 c:\users\valen\downloads\tpi\tpi\empleadoarchivo.h
+	<iostream>
+	<cstdio>
+	"Empleado.h"
+
+1781835888 c:\users\valen\downloads\tpi\tpi\empleado.h
+	<string>
+	"Persona.h"
+
+1781835888 source:c:\users\valen\downloads\tpi\tpi\alquilerarchivo.cpp
+	"AlquilerArchivo.h"
+	<cstring>
+
+1781835888 c:\users\valen\downloads\tpi\tpi\alquilerarchivo.h
+	<iostream>
+	<cstdio>
+	"Alquiler.h"
+
+1781835888 source:c:\users\valen\downloads\tpi\tpi\cliente.cpp
+	<cstring>
+	<string>
+	<iostream>
+	"Persona.h"
+	"Cliente.h"
+
+1781835888 source:c:\users\valen\downloads\tpi\tpi\clientearchivo.cpp
+	"ClienteArchivo.h"
+	<cstring>
+
+1781835888 source:c:\users\valen\downloads\tpi\tpi\empleado.cpp
+	<cstring>
+	<string>
+	<iostream>
+	"Empleado.h"
+	"Persona.h"
+
+1781835888 source:c:\users\valen\downloads\tpi\tpi\empleadoarchivo.cpp
+	"EmpleadoArchivo.h"
+	<cstring>
+
+1781835888 source:c:\users\valen\downloads\tpi\tpi\fechahora.cpp
+	"FechaHora.h"
+
+1781865337 source:c:\users\valen\downloads\tpi\tpi\main.cpp
+	<iostream>
+	"Vehiculo.h"
+	"VehiculoArchivo.h"
+	"managerMenu.h"
+
+1781040794 c:\users\valen\downloads\tpi\tpi\vehiculo.h
+	<iostream>
+	<cstring>
+
+1781752648 c:\users\valen\downloads\tpi\tpi\vehiculoarchivo.h
+	"vehiculo.h"
+
+1781864628 c:\users\valen\downloads\tpi\tpi\managermenu.h
+
+1781933622 source:c:\users\valen\downloads\tpi\tpi\managermenu.cpp
+	<iostream>
+	"managerMenu.h"
+	"VehiculoArchivo.h"
+	"Vehiculo.h"
+	"Utils.h"
+	"Alquiler.h"
+	"AlquilerArchivo.h"
+	<cstring>
+
+1781835888 source:c:\users\valen\downloads\tpi\tpi\menuempleados.cpp
+	"MenuEmpleados.h"
+	<iostream>
+
+1781835888 c:\users\valen\downloads\tpi\tpi\menuempleados.h
+	"Empleado.h"
+	"EmpleadoArchivo.h"
+
+1781835888 source:c:\users\valen\downloads\tpi\tpi\persona.cpp
+	<cstring>
+	<string>
+	<iostream>
+	"Persona.h"
+
+1781922392 source:c:\users\valen\downloads\tpi\tpi\utils.cpp
+	"Utils.h"
+	<cstring>
+
+1781822777 source:c:\users\valen\downloads\tpi\tpi\vehiculo.cpp
+	"vehiculo.h"
+	<cstring>
+	<string>
+	"Utils.h"
+
+1781767234 source:c:\users\valen\downloads\tpi\tpi\vehiculoarchivo.cpp
+	<iostream>
+	"vehiculo.h"
+	<cstring>
+	"VehiculoArchivo.h"
+
+1782024455 source:c:\users\nicol\downloads\tpiv2\tpiv2\alquiler.cpp
+	"Alquiler.h"
+	"Utils.h"
+
+1781835888 c:\users\nicol\downloads\tpiv2\tpiv2\alquiler.h
+	<iostream>
+	"FechaHora.h"
+
+1781835888 c:\users\nicol\downloads\tpiv2\tpiv2\fechahora.h
+	<iostream>
+	<ctime>
+
+1782003909 c:\users\nicol\downloads\tpiv2\tpiv2\utils.h
+	<iostream>
+	<regex>
+	"FechaHora.h"
+	"ClienteArchivo.h"
+	"EmpleadoArchivo.h"
+	"VehiculoArchivo.h"
+
+1781835888 c:\users\nicol\downloads\tpiv2\tpiv2\clientearchivo.h
+	<iostream>
+	<cstdio>
+	"Cliente.h"
+
+1781835888 c:\users\nicol\downloads\tpiv2\tpiv2\cliente.h
+	<string>
+	"Persona.h"
+
+1781835888 c:\users\nicol\downloads\tpiv2\tpiv2\persona.h
+	<string>
+
+1781835888 c:\users\nicol\downloads\tpiv2\tpiv2\empleadoarchivo.h
+	<iostream>
+	<cstdio>
+	"Empleado.h"
+
+1781835888 c:\users\nicol\downloads\tpiv2\tpiv2\empleado.h
+	<string>
+	"Persona.h"
+
+1782057270 source:c:\users\nicol\downloads\tpiv2\tpiv2\alquilerarchivo.cpp
+	"AlquilerArchivo.h"
+	<cstring>
+
+1781835888 c:\users\nicol\downloads\tpiv2\tpiv2\alquilerarchivo.h
+	<iostream>
+	<cstdio>
+	"Alquiler.h"
+
+1782058159 source:c:\users\nicol\downloads\tpiv2\tpiv2\cliente.cpp
+	<cstring>
+	<string>
+	<iostream>
+	"Persona.h"
+	"Cliente.h"
+
+1782056140 source:c:\users\nicol\downloads\tpiv2\tpiv2\clientearchivo.cpp
+	"ClienteArchivo.h"
+	<cstring>
+	<string>
+
+1782064502 source:c:\users\nicol\downloads\tpiv2\tpiv2\empleado.cpp
+	<cstring>
+	<string>
+	<iostream>
+	"Utils.h"
+	"Empleado.h"
+	"Persona.h"
+
+1782058541 source:c:\users\nicol\downloads\tpiv2\tpiv2\empleadoarchivo.cpp
+	"EmpleadoArchivo.h"
+	<cstring>
+
+1781835888 source:c:\users\nicol\downloads\tpiv2\tpiv2\fechahora.cpp
+	"FechaHora.h"
+
+1782065390 source:c:\users\nicol\downloads\tpiv2\tpiv2\main.cpp
+	<iostream>
+	"Empleado.h"
+	"EmpleadoArchivo.h"
+	"Utils.h"
+	"managerMenu.h"
+
+1781040794 c:\users\nicol\downloads\tpiv2\tpiv2\vehiculo.h
+	<iostream>
+	<cstring>
+
+1781752648 c:\users\nicol\downloads\tpiv2\tpiv2\vehiculoarchivo.h
+	"vehiculo.h"
+
+1782060420 c:\users\nicol\downloads\tpiv2\tpiv2\managermenu.h
+
+1782063008 source:c:\users\nicol\downloads\tpiv2\tpiv2\managermenu.cpp
+	<iostream>
+	"managerMenu.h"
+	"VehiculoArchivo.h"
+	"Vehiculo.h"
+	"Utils.h"
+	"Alquiler.h"
+	"AlquilerArchivo.h"
+	<cstring>
+
+1781835888 source:c:\users\nicol\downloads\tpiv2\tpiv2\menuempleados.cpp
+	"MenuEmpleados.h"
+	<iostream>
+
+1781835888 c:\users\nicol\downloads\tpiv2\tpiv2\menuempleados.h
+	"Empleado.h"
+	"EmpleadoArchivo.h"
+
+1782064975 source:c:\users\nicol\downloads\tpiv2\tpiv2\persona.cpp
+	<cstring>
+	<string>
+	<iostream>
+	"Persona.h"
+
+1782064453 source:c:\users\nicol\downloads\tpiv2\tpiv2\utils.cpp
+	"Utils.h"
+	<cstring>
+
+1781822777 source:c:\users\nicol\downloads\tpiv2\tpiv2\vehiculo.cpp
+	"vehiculo.h"
+	<cstring>
+	<string>
+	"Utils.h"
+
+1781767234 source:c:\users\nicol\downloads\tpiv2\tpiv2\vehiculoarchivo.cpp
+	<iostream>
+	"vehiculo.h"
+	<cstring>
+	"VehiculoArchivo.h"
+
+1782024455 source:c:\users\ale\desktop\frankestein\tpiv2\tpiv2\alquiler.cpp
+	"Alquiler.h"
+	"Utils.h"
+
+1781835888 c:\users\ale\desktop\frankestein\tpiv2\tpiv2\alquiler.h
+	<iostream>
+	"FechaHora.h"
+
+1781835888 c:\users\ale\desktop\frankestein\tpiv2\tpiv2\fechahora.h
+	<iostream>
+	<ctime>
+
+1782003909 c:\users\ale\desktop\frankestein\tpiv2\tpiv2\utils.h
+	<iostream>
+	<regex>
+	"FechaHora.h"
+	"ClienteArchivo.h"
+	"EmpleadoArchivo.h"
+	"VehiculoArchivo.h"
+
+1781835888 c:\users\ale\desktop\frankestein\tpiv2\tpiv2\clientearchivo.h
+	<iostream>
+	<cstdio>
+	"Cliente.h"
+
+1781835888 c:\users\ale\desktop\frankestein\tpiv2\tpiv2\cliente.h
+	<string>
+	"Persona.h"
+
+1781835888 c:\users\ale\desktop\frankestein\tpiv2\tpiv2\persona.h
+	<string>
+
+1781835888 c:\users\ale\desktop\frankestein\tpiv2\tpiv2\empleadoarchivo.h
+	<iostream>
+	<cstdio>
+	"Empleado.h"
+
+1781835888 c:\users\ale\desktop\frankestein\tpiv2\tpiv2\empleado.h
+	<string>
+	"Persona.h"
+
+1781752648 c:\users\ale\desktop\frankestein\tpiv2\tpiv2\vehiculoarchivo.h
+	"vehiculo.h"
+
+1781040794 c:\users\ale\desktop\frankestein\tpiv2\tpiv2\vehiculo.h
+	<iostream>
+	<cstring>
+
+1782057270 source:c:\users\ale\desktop\frankestein\tpiv2\tpiv2\alquilerarchivo.cpp
+	"AlquilerArchivo.h"
+	<cstring>
+
+1781835888 c:\users\ale\desktop\frankestein\tpiv2\tpiv2\alquilerarchivo.h
+	<iostream>
+	<cstdio>
+	"Alquiler.h"
+
+1782058159 source:c:\users\ale\desktop\frankestein\tpiv2\tpiv2\cliente.cpp
+	<cstring>
+	<string>
+	<iostream>
+	"Persona.h"
+	"Cliente.h"
+
+1782056140 source:c:\users\ale\desktop\frankestein\tpiv2\tpiv2\clientearchivo.cpp
+	"ClienteArchivo.h"
+	<cstring>
+	<string>
+
+1782064502 source:c:\users\ale\desktop\frankestein\tpiv2\tpiv2\empleado.cpp
+	<cstring>
+	<string>
+	<iostream>
+	"Utils.h"
+	"Empleado.h"
+	"Persona.h"
+
+1782058541 source:c:\users\ale\desktop\frankestein\tpiv2\tpiv2\empleadoarchivo.cpp
+	"EmpleadoArchivo.h"
+	<cstring>
+
+1781835888 source:c:\users\ale\desktop\frankestein\tpiv2\tpiv2\fechahora.cpp
+	"FechaHora.h"
+
+1782065800 source:c:\users\ale\desktop\frankestein\tpiv2\tpiv2\main.cpp
+	<iostream>
+	"Empleado.h"
+	"EmpleadoArchivo.h"
+	"Utils.h"
+	"managerMenu.h"
+
+1782060420 c:\users\ale\desktop\frankestein\tpiv2\tpiv2\managermenu.h
+
+1782063008 source:c:\users\ale\desktop\frankestein\tpiv2\tpiv2\managermenu.cpp
+	<iostream>
+	"managerMenu.h"
+	"VehiculoArchivo.h"
+	"Vehiculo.h"
+	"Utils.h"
+	"Alquiler.h"
+	"AlquilerArchivo.h"
+	<cstring>
+
+1781835888 source:c:\users\ale\desktop\frankestein\tpiv2\tpiv2\menuempleados.cpp
+	"MenuEmpleados.h"
+	<iostream>
+
+1781835888 c:\users\ale\desktop\frankestein\tpiv2\tpiv2\menuempleados.h
+	"Empleado.h"
+	"EmpleadoArchivo.h"
+
+1782064975 source:c:\users\ale\desktop\frankestein\tpiv2\tpiv2\persona.cpp
+	<cstring>
+	<string>
+	<iostream>
+	"Persona.h"
+
+1782064453 source:c:\users\ale\desktop\frankestein\tpiv2\tpiv2\utils.cpp
+	"Utils.h"
+	<cstring>
+
+1781822777 source:c:\users\ale\desktop\frankestein\tpiv2\tpiv2\vehiculo.cpp
+	"vehiculo.h"
+	<cstring>
+	<string>
+	"Utils.h"
+
+1781767234 source:c:\users\ale\desktop\frankestein\tpiv2\tpiv2\vehiculoarchivo.cpp
+	<iostream>
+	"vehiculo.h"
+	<cstring>
+	"VehiculoArchivo.h"
+
