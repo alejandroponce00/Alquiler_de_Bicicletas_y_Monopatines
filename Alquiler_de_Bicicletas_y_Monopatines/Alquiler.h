@@ -1,5 +1,4 @@
-#ifndef ALQUILER_H
-#define ALQUILER_H
+#pragma once
 
 #include <iostream>
 #include "FechaHora.h"
@@ -11,13 +10,13 @@ private:
     int       _idCliente;
     int       _idEmpleado;
     int       _idVehiculo;
-    FechaHora _fechaHoraInicio;
-    FechaHora _fechaHoraFin;
+    FechaHora _fechaHoraInicio;// objeto de otra clase como atributo
+    FechaHora _fechaHoraFin;// objeto de otra clase como atributo
     bool      _estado;       // true = activo | false = finalizado
     float     _montoTotal;
 
 public:
-    Alquiler();
+    Alquiler();//constructor
 
     // Setters
     void setCodAlquiler(int codAlquiler);
@@ -45,4 +44,4 @@ public:
     void mostrar();
 };
 
-#endif
+

@@ -33,8 +33,14 @@ public:
     //empleado
     void buscarPorId();
     void listaPorTurno();
-
-
+    //informes
+    void recaudacionMensual();
+    void vehiculoMasAlquilado();
+    void clienteConMasAlquileres();
+    void alquileresPorTipoTeclado();
+    void recaudacionPorTipoVehiculo();
+    void top5Clientes();
+    void alquilerporTurno();
 
 
 

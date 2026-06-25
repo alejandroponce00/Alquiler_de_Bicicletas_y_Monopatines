@@ -1,6 +1,7 @@
 #include "Utils.h"
 #include <cstring>
 
+
 float calMonto(FechaHora inicio, FechaHora fin, float precioPorBloque) {
     long minutos = fin.totalMinutos() - inicio.totalMinutos();
     if (minutos < 0) minutos = 0;
@@ -44,20 +45,53 @@ FechaHora pedirFechaInicio(int tipo) {
     }
 }
 
-bool validarCliente(int id) {
-    ClienteArchivo archivo;
-    int pos = archivo.buscarPorID(id);
-    if (pos == -1) {
+bool validarCliente(int &id) {
+    ClienteArchivo clieArchi;
+    int op;
+
+    int posClie = clieArchi.buscarPorID(id);
+
+    //  SI EL CLIENTE NO EXISTE:
+    if (posClie == -1) {
         cout << "Error: el cliente no existe." << endl;
+        cout << "Quiere registrar este Cliente? (Si=1 / No=0): ";
+        cin >> op;
+
+        if (op == 1) {
+            ManagerMenu menu;
+            menu.altaCliente(); // El Empleado lo registra normalmente por teclado
+
+            // Averiguamos cuántos registros hay ahora en el archivo
+            int totalRegistros = clieArchi.contarRegistros();
+
+            if (totalRegistros > 0) {
+                // Leemos el último cliente de la lista (posición total - 1)
+                Cliente ultimoCliente = clieArchi.leer(totalRegistros - 1);
+
+                // Le asignamos el ID autogenerado a nuestra variable del alquiler
+                id = ultimoCliente.getIdCliente();
+
+
+                return true;
+            } else {
+                cout << "Error: No se pudo completar el registro del cliente." << endl;
+                return false;
+            }
+        }
         return false;
     }
-    Cliente c = archivo.leer(pos);
-    if (c.getEstado() == false) {
+
+    // SI EL CLIENTE EXISTE PERO ESTÁ DADO DE BAJA:
+    Cliente clie = clieArchi.leer(posClie);
+    if (clie.getEstado() == false) {
         cout << "Error: el cliente esta dado de baja." << endl;
         return false;
     }
+
+    // SI EL CLIENTE EXISTE Y ESTÁ ACTIVO:
     return true;
 }
+
 
 bool validarEmpleado(int id) {
     EmpleadoArchivo archivo;

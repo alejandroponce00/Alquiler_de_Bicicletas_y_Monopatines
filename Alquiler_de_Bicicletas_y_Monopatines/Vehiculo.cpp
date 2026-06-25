@@ -14,7 +14,7 @@ void Vehiculo::Mostrar()
 const{
 
 
-    if(strcmp(getTipoVehiculo(),"Bicicleta"))
+    if(strcmp(getTipoVehiculo(),"Bicicleta")==0)
     {
 
         cout<<"Vehiculo Id : "<<getIdVehiculo()<<endl;
@@ -24,10 +24,11 @@ const{
         cout<<"Modelo :"<<getModelo()<<endl;
         cout<<"Color :"<<getColor()<<endl;
         cout<<"Rodado :"<<getRodado()<<endl;
+        cout <<"Cambio :" << (getCambios() ? "Si" : "No") << endl;
         cout<<"Precio:"<<getPrecio()<<endl;
         cout<<"---------------------------------"<<endl;
     }
-    else if(strcmp(getTipoVehiculo(),"MonoPatin Electrico"))
+    else if(strcmp(getTipoVehiculo(),"Monopatin Electrico")==0)
     {
         cout<<"Vehiculo Id : "<<getIdVehiculo()<<endl;
         cout<<"---------------------------------"<<endl;
@@ -37,7 +38,6 @@ const{
         cout<<"Color :"<<getColor()<<endl;
         cout<<"Rodado :"<<getRodado()<<endl;
         cout<<"Precio:"<<getPrecio()<<endl;
-        cout<<"Cambio:"<<getCambios()<<endl;
         cout<<"Bateria :"<<getBateria()<<endl;
         cout<<"Velocidad Maxima :"<<getVelocidadMaxima()<<endl;
         cout<<"---------------------------------"<<endl;

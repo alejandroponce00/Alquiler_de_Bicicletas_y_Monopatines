@@ -1,6 +1,4 @@
-#ifndef ALQUILERARCHIVO_H
-#define ALQUILERARCHIVO_H
-
+#pragma once
 #include <iostream>
 #include <cstdio>
 #include "Alquiler.h"
@@ -36,4 +34,3 @@ public:
     int contarRegistros();
 };
 
-#endif

@@ -1,9 +1,9 @@
 #include "Alquiler.h"
 #include "Utils.h"
 
-Alquiler::Alquiler() {
+Alquiler::Alquiler() {   // contructor
     _codAlquiler  = 0;
-    _idCliente    = 0;
+    _idCliente    = 0;                    //cuando se crea un nuevo alquiler
     _idEmpleado   = 0;
     _idVehiculo   = 0;
     _estado       = true;
@@ -12,7 +12,7 @@ Alquiler::Alquiler() {
 
 // ── Setters ────────────────────────────────────────────────────────────────────
 
-void Alquiler::setCodAlquiler(int codAlquiler)    { _codAlquiler     = codAlquiler; }
+void Alquiler::setCodAlquiler(int codAlquiler)    { _codAlquiler     = codAlquiler; }//aca el setter guarda el valor recibido en el atributo
 void Alquiler::setIdCliente(int idCliente)        { _idCliente       = idCliente; }
 void Alquiler::setIdEmpleado(int idEmpleado)      { _idEmpleado      = idEmpleado; }
 void Alquiler::setIdVehiculo(int idVehiculo)      { _idVehiculo      = idVehiculo; }
@@ -23,7 +23,7 @@ void Alquiler::setMontoTotal(float montoTotal)    { _montoTotal      = montoTota
 
 // ── Getters ────────────────────────────────────────────────────────────────────
 
-int       Alquiler::getCodAlquiler()     { return _codAlquiler; }
+int       Alquiler::getCodAlquiler()     { return _codAlquiler; } //aca el getter devuelve el valor recibido en el atributo
 int       Alquiler::getIdCliente()       { return _idCliente; }
 int       Alquiler::getIdEmpleado()      { return _idEmpleado; }
 int       Alquiler::getIdVehiculo()      { return _idVehiculo; }
@@ -35,7 +35,7 @@ float     Alquiler::getMontoTotal()      { return _montoTotal; }
 // ── Logica de negocio ──────────────────────────────────────────────────────────
 
 void Alquiler::calcularMonto(float precioPorBloque) {
-    float total=calMonto(_fechaHoraInicio, _fechaHoraFin, precioPorBloque);
+    float total=calMonto(_fechaHoraInicio, _fechaHoraFin, precioPorBloque); //el calculo en realidad viene de Utils
 
     _montoTotal = total;
 }

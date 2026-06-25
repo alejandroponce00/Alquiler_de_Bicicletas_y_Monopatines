@@ -4,6 +4,7 @@
 #include "Vehiculo.h"
 #include "Utils.h"
 #include "Alquiler.h"
+#include "FechaHora.h"
 #include "AlquilerArchivo.h"
 #include <cstring>
 using namespace std;
@@ -282,7 +283,7 @@ void ManagerMenu::listadoVehiculo()
             system("pause");
             break;
         case 4:
-            cout<<"Ingrese tipo : ";
+            cout<<"Ingrese tipo : "<<"Bicicleta / Monopatin Electrico"<<endl;
             tipo=cargarCadena(20);
             vehiArchi.listarPortipo(tipo);
             system("pause");
@@ -296,7 +297,6 @@ void ManagerMenu::listadoVehiculo()
             cout<<"Ingresaste un opcion no valida..."<<endl;
             system("pause");
             break;
-
         }
     }
     while(op!=0);
@@ -601,32 +601,6 @@ void ManagerMenu::bajaVehiculo()
 }
 
 
-void ManagerMenu::menuInformes()
-{
-    int op;
-
-    do
-    {
-        system("cls");
-        cout<<"=====Menu Informe====="<<endl;
-        cout<<"1-Recaudacion Mensual"<<endl;
-        cout<<"2-Vehiculo Mas Alquilado"<<endl;
-        cout<<"3-Cliente Con Mayor Alquileres"<<endl;
-        cout<<"4-Cantidad De Alquileres Por Tipo Vehiculo"<<endl;
-        cout<<"5-Recaudacion Por Tipo Vehiculo"<<endl;
-        cout<<"6-Top 5 Clientes"<<endl;
-        cout<<"0-Volver"<<endl;
-        cout<<"======================="<<endl;
-        cout<<"Ingrese Opcion : ";
-
-
-
-    }
-    while(op!=0);
-
-
-}
-
 void ManagerMenu::menuAlquileres()
 {
     AlquilerArchivo archi;
@@ -813,7 +787,7 @@ void ManagerMenu::registrarAlquiler()
             {
                 clienArchi.modificar(clien,posClien);
                 vehiArchi.modificar(vehi,posVehi);
-                cout<<"Alquiler registrado correctamente."<<endl;
+
             }
             else
             {
@@ -1311,7 +1285,7 @@ void ManagerMenu::bajaCliente()
     ClienteArchivo clienArchi;
     int id;
 
-    cout<<"Ingrese Id del Cliente : ";
+    cout<<"Ingrese Id del Vehiculo : ";
     cin>>id;
     bool exito=clienArchi.bajaLogica(id);
 
@@ -1475,13 +1449,16 @@ void ManagerMenu::menuEmpleados()
             buscarPorId();
             system("pause");
             break;
-        case 2:empArchi.listar();
+        case 2:
+            empArchi.listar();
             system("pause");
             break;
-        case 3:empArchi.listarActivos();
+        case 3:
+            empArchi.listarActivos();
             system("pause");
             break;
-            case 4:listaPorTurno();
+        case 4:
+            listaPorTurno();
             system("pause");
             break;
         case 0:
@@ -1516,7 +1493,8 @@ void ManagerMenu::buscarPorId()
 }
 
 
-void ManagerMenu::listaPorTurno(){
+void ManagerMenu::listaPorTurno()
+{
 
     EmpleadoArchivo empArchi;
     Empleado empl;
@@ -1527,3 +1505,423 @@ void ManagerMenu::listaPorTurno(){
 
 
 }
+
+
+//Informes
+void ManagerMenu::menuInformes()
+{
+    int op;
+
+    do
+    {
+        system("cls");
+        cout<<"=====Menu Informe====="<<endl;
+        cout<<"1-Recaudacion mensual"<<endl;
+        cout<<"2-Vehiculo Mas Alquilado"<<endl;
+        cout<<"3-Cliente Con Mayor Alquileres"<<endl;
+        cout<<"4-Cantidad de alquileres por tipo de vehiculo"<<endl;
+        cout<<"5-Recaudacion por tipo de vehiculo "<<endl;
+        cout<<"6-Top 5 Clientes"<<endl;
+        cout<<"0-Volver"<<endl;
+        cout<<"======================="<<endl;
+        cout<<"Ingrese Opcion : ";
+        cin>>op;
+
+        switch(op)
+        {
+        case 1:
+            recaudacionMensual();
+
+            break;
+        case 2:
+            vehiculoMasAlquilado();
+
+            break;
+        case 3:
+            clienteConMasAlquileres();
+
+            break;
+        case 4:
+            alquileresPorTipoTeclado();
+            break;
+        case 5:
+            recaudacionPorTipoVehiculo();
+            break;
+        case 6:top5Clientes();
+            break;
+        case 0:
+            break;
+        default:
+            break;
+        }
+
+
+
+
+    }
+    while(op!=0);
+}
+
+
+void ManagerMenu::recaudacionMensual()
+{
+    system("cls");
+    cout << "======= RECAUDACION MENSUAL =======" << endl;
+
+    int anioBuscado;
+    cout << "Ingrese el anio a consultar: ";
+    cin >> anioBuscado;
+
+    //Arreglo acumulador para los 12 meses, inicializado en 0
+    float meses[12] = {0};
+
+    // Instanciamos el archivo de alquileres
+    AlquilerArchivo alquiArchi;
+
+    // Obtenemos cuántos alquileres hay guardados en total
+    int totalRegistros = alquiArchi.contarRegistros();
+
+
+    for (int i = 0; i < totalRegistros; i++)
+    {
+
+        Alquiler alq = alquiArchi.leer(i);
+
+        // Traemos la fecha de ese alquiler
+        FechaHora f = alq.getFechaHoraFin();
+
+        // FILTRO: Validamos año y que el alquiler esté activo
+        if (f.getAnio() == anioBuscado && alq.getEstado() == false)
+        {
+            int numMes = f.getMes();
+
+
+            meses[numMes - 1] += alq.getMontoTotal();
+        }
+    }
+
+    //  Mostramos el reporte en pantalla
+    system("cls");
+    cout << "======= RECAUDACION ANIO " << anioBuscado << " =======" << endl;
+    cout << "---------------------------------------" << endl;
+
+    for (int i = 0; i < 12; i++)
+    {
+        cout << "Mes " << (i + 1) << ": $ " << meses[i] << endl;
+    }
+
+    cout << "---------------------------------------" << endl;
+
+    // Calculamos el total general del año
+    float totalAnual = 0;
+    for (int i = 0; i < 12; i++) totalAnual += meses[i];
+    cout << "TOTAL RECAUDADO EN EL ANIO: $ " << totalAnual << endl;
+    cout << "=======================================" << endl;
+
+    system("pause");
+}
+
+
+void ManagerMenu::vehiculoMasAlquilado()
+{
+    system("cls");
+    cout << "======= VEHICULO MAS ALQUILADO =======" << endl;
+
+    VehiculoArchivo vehiArchi;
+    AlquilerArchivo alquiArchi;
+
+    int totalVehiculos = vehiArchi.contarRegistros();
+    int totalAlquileres = alquiArchi.contarRegistros();
+
+    // Si no hay datos, cortamos el proceso
+    if (totalVehiculos == 0 || totalAlquileres == 0)
+    {
+        cout << "No hay suficientes datos en los archivos para calcular." << endl;
+        system("pause");
+        return;
+    }
+
+    Vehiculo vehiculoGanador;
+    int maxAlquileres = -1; // Guardará la cantidad más alta encontrada
+
+    //  Recorremos cada vehículo del archivo
+    for (int i = 0; i < totalVehiculos; i++)
+    {
+        Vehiculo veh = vehiArchi.leer(i);
+
+        // Omitimos vehículos dados de baja si tu sistema los filtra
+        if (veh.getEstado() == false) continue;
+
+        int contadorAlquileresActual = 0;
+
+        //  Por cada vehículo, recorremos todo el archivo de alquileres para contar
+        for (int j = 0; j < totalAlquileres; j++)
+        {
+            Alquiler alq = alquiArchi.leer(j);
+
+            if (alq.getEstado() == false && alq.getIdVehiculo() == veh.getIdVehiculo())
+            {
+                contadorAlquileresActual++;
+            }
+        }
+
+        //  Si este vehículo fue más alquilado que el máximo anterior, lo guardamos como ganador
+        if (contadorAlquileresActual > maxAlquileres)
+        {
+            maxAlquileres = contadorAlquileresActual;
+            vehiculoGanador = veh;
+        }
+    }
+
+    //  Mostramos el resultado final en la pantalla
+    system("cls");
+    cout << "======= VEHICULO MAS ALQUILADO =======" << endl;
+    cout << "---------------------------------------" << endl;
+
+    if (maxAlquileres > 0)
+    {
+        // Mostramos los datos del ganador usando su propio método Mostrar
+        vehiculoGanador.Mostrar();
+        cout << "Cantidad total de alquileres: " << maxAlquileres << endl;
+    }
+    else
+    {
+        cout << "Ninguno de los vehiculos registrados tiene alquileres activos." << endl;
+    }
+
+    cout << "---------------------------------------" << endl;
+    system("pause");
+}
+
+void ManagerMenu::clienteConMasAlquileres()
+{
+    ClienteArchivo clieArchi;
+    AlquilerArchivo alqArchi;;
+    Cliente ganador, clie;
+    Alquiler alq;
+    int maxAlq = -1;
+    int totalClientes = clieArchi.contarRegistros();
+    int totalAlquileres= alqArchi.contarRegistros();
+
+    for (int i = 0; i < totalClientes; i++)
+    {
+        clie = clieArchi.leer(i);
+        if (!clie.getEstado()) continue;
+
+        int cantActual = 0;
+        for (int j = 0; j < totalAlquileres; j++)
+        {
+            alq = alqArchi.leer(j);
+            // Comparamos los IDs numéricos directamente
+            if (alq.getEstado()==false && alq.getIdCliente() == clie.getIdCliente()) cantActual++;
+        }
+
+        if (cantActual > maxAlq)
+        {
+            maxAlq = cantActual;
+            ganador = clie;
+        }
+    }
+
+    system("cls");
+    cout << "======= CLIENTE CON MAS ALQUILERES =======" << endl;
+    if (maxAlq > 0)
+    {
+        ganador.Mostrar();
+        cout << "Cantidad de alquileres: " << maxAlq << endl;
+    }
+    else
+    {
+        cout << "No hay alquileres registrados." << endl;
+    }
+    system("pause");
+}
+
+void ManagerMenu::alquileresPorTipoTeclado()
+{
+    system("cls");
+    cout << "Ingrese el tipo de vehiculo a consultar: ";
+    string tipoBuscado = cargarCadena(30);
+
+    AlquilerArchivo alqArchi;
+    VehiculoArchivo vehiArchi;
+    int totalVehiculos=vehiArchi.contarRegistros();
+    int totalAlquileres=alqArchi.contarRegistros();
+    int contador = 0;
+
+    for (int i = 0; i < totalAlquileres; i++)
+    {
+        Alquiler alq = alqArchi.leer(i);
+        if (alq.getEstado()) continue;
+
+        // Buscamos el vehículo de ese alquiler para saber su tipo
+        int posVeh = vehiArchi.buscarPorId(alq.getIdVehiculo());
+        if (posVeh != -1)
+        {
+            Vehiculo vehi = vehiArchi.leer(posVeh);
+            // Comparamos los textos del tipo de vehículo
+            if (strcmp(vehi.getTipoVehiculo(), tipoBuscado.c_str()) == 0) contador++;
+        }
+    }
+
+    cout << "Total de alquileres para el tipo [" << tipoBuscado << "]: " << contador << endl;
+    system("pause");
+}
+
+
+void ManagerMenu::recaudacionPorTipoVehiculo()
+{
+    system("cls");
+    VehiculoArchivo vehiArchi;
+    Vehiculo vehi;
+    AlquilerArchivo alqArchi;
+    Alquiler alq;
+
+    float totalBici = 0;
+    float totalMonopatin = 0;
+
+    int totalVehiculos = vehiArchi.contarRegistros();
+    int totalAlquileres = alqArchi.contarRegistros();
+
+    for(int i=0; i<totalAlquileres; i++)
+    {
+        alq=alqArchi.leer(i);
+
+        if(alq.getEstado()==0)
+        {
+
+            int idVehi=alq.getIdVehiculo();
+            int posVehi=alqArchi.buscarPorID(idVehi);
+
+            if(posVehi != -1)
+            {
+                vehi=vehiArchi.leer(posVehi);
+
+                if(strcmp(vehi.getTipoVehiculo(),"Bicicleta")==0)
+                {
+
+                    totalBici+=alq.getMontoTotal();
+                }
+                else if(strcmp(vehi.getTipoVehiculo(),"Monopatin Electrico")==0)
+                {
+
+                    totalMonopatin+=alq.getMontoTotal();
+
+                }
+            }
+
+        }
+
+
+
+    }
+
+    // 4. Mostramos los totales en pantalla
+    cout << "======= RECAUDACION POR CATEGORIA =======" << endl;
+    cout << "Bicicletas:          $ " << totalBici << endl;
+    cout << "Monopatines Electrico:  $ " << totalMonopatin << endl;
+    cout << "-----------------------------------------" << endl;
+
+    // Operador ternario para ver cuál recaudó más
+    cout << "Categoria con mas ingresos: "
+         << (totalBici > totalMonopatin ? "Bicicleta" : "Monopatin Electrico") << endl;
+
+    cout << "=========================================" << endl;
+    system("pause");
+
+
+}
+
+void ManagerMenu::top5Clientes() {
+    system("cls");
+    cout << "======= TOP 5 CLIENTES =======" << endl;
+
+    ClienteArchivo archiCli;
+    AlquilerArchivo archiAlq;
+
+    //  Averiguamos cuántos clientes y alquileres hay en total
+    int totalCli = archiCli.contarRegistros();
+    int totalAlq = archiAlq.contarRegistros();
+
+
+    int ids[100];        // Lista para guardar los ID de los clientes
+    int alquileres[100];  // Lista para contar los alquileres de cada uno
+
+    //   Llenamos las listas recorriendo el archivo
+    for (int i = 0; i < totalCli; i++) {
+
+        Cliente clie = archiCli.leer(i);
+        ids[i] = clie.getIdCliente();
+        alquileres[i] = 0; // Empezamos a contar desde cero
+
+        // Recorremos todos los alquileres buscando coincidencias con este cliente
+        for (int j = 0; j < totalAlq; j++) {
+            Alquiler alq = archiAlq.leer(j);
+
+            // Si el alquiler es de este cliente y está terminado (0)
+            if (alq.getIdCliente() == ids[i] && alq.getEstado() == 0) {
+                alquileres[i]++; // Encontramos uno, sumamos 1 al contador
+            }
+        }
+    }
+
+    //  PASO DE ORDENAMIENTO (Burbuja)
+    for (int i = 0; i < totalCli - 1; i++) {
+        for (int j = 0; j < totalCli - i - 1; j++) {
+
+
+            if (alquileres[j] < alquileres[j + 1]) {
+
+                // Intercambiamos el número de alquileres de lugar
+                int auxAlq = alquileres[j];
+                alquileres[j] = alquileres[j + 1];
+                alquileres[j + 1] = auxAlq;
+
+                //  Intercambiamos TAMBIÉN el ID del cliente en el mismo orden
+
+                int auxId = ids[j];
+                ids[j] = ids[j + 1];
+                ids[j + 1] = auxId;
+            }
+        }
+    }
+
+    //   Imprimimos el Top 5 en la pantalla
+    int puestosMostrados = 0;
+
+    for (int i = 0; i < totalCli; i++) {
+        // Si ya mostramos los 5 mejores, frenamos el bucle
+        if (puestosMostrados == 5) break;
+
+        // Solo mostramos si alquiló 10 veces o más
+        if (alquileres[i] >= 10) {
+            cout << "PUESTO Nro " << (puestosMostrados + 1) << endl;
+
+            // Buscamos al cliente real en el archivo para mostrar su nombre
+            int posCli = archiCli.buscarPorID(ids[i]);
+            Cliente clieGanador = archiCli.leer(posCli);
+            clieGanador.Mostrar();
+
+            cout << "Total de alquileres: " << alquileres[i] << endl;
+            cout << "---------------------------------------" << endl;
+
+            puestosMostrados++; // Contamos que ya mostramos un puesto
+        }
+    }
+
+    // Si terminó el bucle y nadie cumplió el requisito de los 10 alquileres
+    if (puestosMostrados == 0) {
+        cout << "Ningun cliente llega a los 10 alquileres todavia." << endl;
+    }
+
+    system("pause");
+}
+
+void alquilerporTurno(){
+//la cantidad de alquileres con un empleado de turno mañana:
+
+
+
+
+}
+

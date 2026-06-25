@@ -6,10 +6,10 @@ AlquilerArchivo::AlquilerArchivo() {
 }
 
 // ── GUARDAR ────────────────────────────────────────────────────────────────────
-// "ab" = append binario: agrega al final sin borrar lo existente
+// "ab" =  agrega al final sin borrar lo existente
 
 bool AlquilerArchivo::guardar(Alquiler alqui) {
-    FILE *p = fopen(_nombreArchivo, "ab");
+    FILE *p = fopen(_nombreArchivo, "ab");//abre el archvo
     if (p == NULL) {
         cout << "Error: no se pudo abrir el archivo." << endl;
         return false;

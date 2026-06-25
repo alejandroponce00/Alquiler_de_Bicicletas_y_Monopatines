@@ -213,11 +213,13 @@ void VehiculoArchivo::listarPortipo(const string tipo)
     int cantidadRegistros=contarRegistros();
     Vehiculo vehi;
 
+
     for(int i=0; i<cantidadRegistros; i++)
     {
         vehi=leer(i);
 
-        if(strcmp(vehi.getTipoVehiculo(),tipo.c_str())==0 && vehi.getEstado()==1)
+
+        if(strcmp(vehi.getTipoVehiculo(),tipo.c_str())==0 && vehi.getEstado()==true)
         {
 
             vehi.Mostrar();

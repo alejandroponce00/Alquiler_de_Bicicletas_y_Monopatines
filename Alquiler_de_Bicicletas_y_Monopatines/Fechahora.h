@@ -1,6 +1,5 @@
-// Evita que el archivo se incluya mas de una vez si varios .cpp lo usan
-#ifndef FECHAHORA_H
-#define FECHAHORA_H
+
+#pragma once
 
 #include <iostream>
 #include <ctime>     // necesario para obtener la fecha actual del sistema en setFechaActual()
@@ -49,4 +48,4 @@ public:
     void mostrar();
 };
 
-#endif
+

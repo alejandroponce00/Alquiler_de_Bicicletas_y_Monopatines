@@ -398,9 +398,10 @@
 	<iostream>
 	<ctime>
 
-1782003909 c:\users\nicol\downloads\tpiv2\tpiv2\utils.h
+1782084174 c:\users\nicol\downloads\tpiv2\tpiv2\utils.h
 	<iostream>
 	<regex>
+	"managerMenu.h"
 	"FechaHora.h"
 	"ClienteArchivo.h"
 	"EmpleadoArchivo.h"
@@ -463,7 +464,7 @@
 1781835888 source:c:\users\nicol\downloads\tpiv2\tpiv2\fechahora.cpp
 	"FechaHora.h"
 
-1782065390 source:c:\users\nicol\downloads\tpiv2\tpiv2\main.cpp
+1782065800 source:c:\users\nicol\downloads\tpiv2\tpiv2\main.cpp
 	<iostream>
 	"Empleado.h"
 	"EmpleadoArchivo.h"
@@ -477,15 +478,16 @@
 1781752648 c:\users\nicol\downloads\tpiv2\tpiv2\vehiculoarchivo.h
 	"vehiculo.h"
 
-1782060420 c:\users\nicol\downloads\tpiv2\tpiv2\managermenu.h
+1782082266 c:\users\nicol\downloads\tpiv2\tpiv2\managermenu.h
 
-1782063008 source:c:\users\nicol\downloads\tpiv2\tpiv2\managermenu.cpp
+1782093985 source:c:\users\nicol\downloads\tpiv2\tpiv2\managermenu.cpp
 	<iostream>
 	"managerMenu.h"
 	"VehiculoArchivo.h"
 	"Vehiculo.h"
 	"Utils.h"
 	"Alquiler.h"
+	"FechaHora.h"
 	"AlquilerArchivo.h"
 	<cstring>
 
@@ -503,7 +505,7 @@
 	<iostream>
 	"Persona.h"
 
-1782064453 source:c:\users\nicol\downloads\tpiv2\tpiv2\utils.cpp
+1782084686 source:c:\users\nicol\downloads\tpiv2\tpiv2\utils.cpp
 	"Utils.h"
 	<cstring>
 
@@ -513,31 +515,34 @@
 	<string>
 	"Utils.h"
 
-1781767234 source:c:\users\nicol\downloads\tpiv2\tpiv2\vehiculoarchivo.cpp
+1782093875 source:c:\users\nicol\downloads\tpiv2\tpiv2\vehiculoarchivo.cpp
 	<iostream>
 	"vehiculo.h"
 	<cstring>
 	"VehiculoArchivo.h"
 
-1782024455 source:c:\users\ale\desktop\frankestein\tpiv2\tpiv2\alquiler.cpp
+1782244753 source:c:\users\ale\desktop\frankestein\tpiv2\tpiv2\alquiler.cpp
 	"Alquiler.h"
 	"Utils.h"
 
-1781835888 c:\users\ale\desktop\frankestein\tpiv2\tpiv2\alquiler.h
+1782169579 c:\users\ale\desktop\frankestein\tpiv2\tpiv2\alquiler.h
 	<iostream>
 	"FechaHora.h"
 
-1781835888 c:\users\ale\desktop\frankestein\tpiv2\tpiv2\fechahora.h
+1782171812 c:\users\ale\desktop\frankestein\tpiv2\tpiv2\fechahora.h
 	<iostream>
 	<ctime>
 
-1782003909 c:\users\ale\desktop\frankestein\tpiv2\tpiv2\utils.h
+1782084174 c:\users\ale\desktop\frankestein\tpiv2\tpiv2\utils.h
 	<iostream>
 	<regex>
+	"managerMenu.h"
 	"FechaHora.h"
 	"ClienteArchivo.h"
 	"EmpleadoArchivo.h"
 	"VehiculoArchivo.h"
+
+1782082266 c:\users\ale\desktop\frankestein\tpiv2\tpiv2\managermenu.h
 
 1781835888 c:\users\ale\desktop\frankestein\tpiv2\tpiv2\clientearchivo.h
 	<iostream>
@@ -567,11 +572,11 @@
 	<iostream>
 	<cstring>
 
-1782057270 source:c:\users\ale\desktop\frankestein\tpiv2\tpiv2\alquilerarchivo.cpp
+1782241542 source:c:\users\ale\desktop\frankestein\tpiv2\tpiv2\alquilerarchivo.cpp
 	"AlquilerArchivo.h"
 	<cstring>
 
-1781835888 c:\users\ale\desktop\frankestein\tpiv2\tpiv2\alquilerarchivo.h
+1782242939 c:\users\ale\desktop\frankestein\tpiv2\tpiv2\alquilerarchivo.h
 	<iostream>
 	<cstdio>
 	"Alquiler.h"
@@ -610,15 +615,14 @@
 	"Utils.h"
 	"managerMenu.h"
 
-1782060420 c:\users\ale\desktop\frankestein\tpiv2\tpiv2\managermenu.h
-
-1782063008 source:c:\users\ale\desktop\frankestein\tpiv2\tpiv2\managermenu.cpp
+1782095398 source:c:\users\ale\desktop\frankestein\tpiv2\tpiv2\managermenu.cpp
 	<iostream>
 	"managerMenu.h"
 	"VehiculoArchivo.h"
 	"Vehiculo.h"
 	"Utils.h"
 	"Alquiler.h"
+	"FechaHora.h"
 	"AlquilerArchivo.h"
 	<cstring>
 
@@ -636,17 +640,17 @@
 	<iostream>
 	"Persona.h"
 
-1782064453 source:c:\users\ale\desktop\frankestein\tpiv2\tpiv2\utils.cpp
+1782171695 source:c:\users\ale\desktop\frankestein\tpiv2\tpiv2\utils.cpp
 	"Utils.h"
 	<cstring>
 
-1781822777 source:c:\users\ale\desktop\frankestein\tpiv2\tpiv2\vehiculo.cpp
+1782094651 source:c:\users\ale\desktop\frankestein\tpiv2\tpiv2\vehiculo.cpp
 	"vehiculo.h"
 	<cstring>
 	<string>
 	"Utils.h"
 
-1781767234 source:c:\users\ale\desktop\frankestein\tpiv2\tpiv2\vehiculoarchivo.cpp
+1782093875 source:c:\users\ale\desktop\frankestein\tpiv2\tpiv2\vehiculoarchivo.cpp
 	<iostream>
 	"vehiculo.h"
 	<cstring>

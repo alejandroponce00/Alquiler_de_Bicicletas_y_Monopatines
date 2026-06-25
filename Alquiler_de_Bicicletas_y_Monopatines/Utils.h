@@ -1,6 +1,7 @@
 #pragma once
 #include <iostream>
 #include <regex>
+#include "managerMenu.h"
 #include "FechaHora.h"
 #include "ClienteArchivo.h"
 #include "EmpleadoArchivo.h"
@@ -25,5 +26,5 @@ using namespace std;
 
     //metodos cliente
     void validarEmail(string &email);
-    bool validarCliente(int id);
+    bool validarCliente(int &id);
     void validarDni(string &dni,ClienteArchivo clienArchi);
